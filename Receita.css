@@ -1,0 +1,116 @@
+/* Apply a reset to remove default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a base font size for better readability */
+  html {
+    font-size: 16px;
+  }
+  
+  /* Apply responsive styles to different screen sizes */
+  @media only screen and (max-width: 768px) {
+    /* Adjust font sizes and spacing for smaller screens */
+    html {
+      font-size: 14px;
+    }
+    
+    /* Center align text */
+    body, h1, h2, p, label, input, select, button {
+      text-align: center;
+    }
+    
+    /* Adjust table layout */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      padding: 8px;
+    }
+    
+    /* Reduce input and button widths */
+    input[type="text"],
+    input[type="number"],
+    select,
+    button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  /* Add additional responsive breakpoints as needed */
+  
+  /* Apply general styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  /* Style the header */
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the form elements */
+  input[type="text"],
+  input[type="number"],
+  select,
+  button {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Style the buttons */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Style the results div */
+  #results {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+/*  botão de ajuda */
+/* Posicionar o botão de ajuda no canto superior esquerdo */
+.inicio {
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  padding: 5px 9px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Posicionar o link de início no canto superior direito */
+.help-button {
+  position: fixed;
+  top: 20px;
+  right: 35px;
+  padding: 10px;
+  background-color: #232323;
+  color: #fff;
+  text-decoration: none;
+  width: 95px;
+}
+#texth2{
+  margin-top: 50px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilha de Precificação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <button id="help-button" class="help-button">Ajuda</button>
+          <a class="inicio" href="index.html">Inicio</a>
+
+        <section id="help-section" class="help-section">
+            <h3>Instruções de Uso</h3>
+            <p>Preencha os campos abaixo com as informações do produto e clique em "Adicionar".</p>
+            <p>O "Custo do Insumo" é o valor que você gastou para produzir um item.</p>
+            <p>O "Markup" é a porcentagem que você deseja adicionar ao custo para calcular o preço de venda.</p>
+            <p>O preço de venda é automaticamente calculado e exibido abaixo.</p>
+            <p>Os ingredientes e custos serão listados na tabela abaixo.</p>
+            <p>O "Total do Custo" será atualizado à medida que você adiciona ingredientes.</p>
+        </section>
+        <h1>Planilha de Precificação</h1>
+    </header>
+
+    <form id="calculator-form">
+        <label for="product-name">Nome do Produto: </label>
+        <input type="text" id="product-name" required><br>
+        
+        <label for="cost">Custo do Insumo: </label>
+        <input type="number" id="cost" step="0.01" required><br>
+        
+        <label for="markup">Markup (%): </label>
+        <input type="number" id="markup" step="0.01" required><br>
+        
+        <button type="button" id="add-button">Adicionar</button>
+    </form>
+    
+    <h2>Preço de Venda: <span id="selling-price"></span></h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Ingrediente</th>
+                <th>Custo</th>
+                <th>Markup</th>
+                <th>Custo Total</th>
+            </tr>
+        </thead>
+        <tbody id="cost-table-body">
+            <!-- Linhas da tabela de custos serão adicionadas aqui -->
+        </tbody>
+    </table>
+
+    <p>Total do Custo: R$ <span id="total-cost-value">0.00</span></p>
+    <footer class="footer">
+        <p>Desenvolvido por Denis Ferreira</p>
+    </footer>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const addButton = document.getElementById("add-button");
+    const helpButton = document.getElementById("help-button");
+    const helpSection = document.getElementById("help-section");
+    const costTableBody = document.getElementById("cost-table-body");
+    const totalCostValue = document.getElementById("total-cost-value");
+
+    let totalCost = 0;
+
+    addButton.addEventListener("click", function () {
+        const productName = document.getElementById("product-name").value;
+        const costInput = parseFloat(document.getElementById("cost").value);
+        const markupInput = parseFloat(document.getElementById("markup").value);
+
+        if (!productName || isNaN(costInput) || isNaN(markupInput)) {
+            alert("Por favor, preencha todas as informações do produto.");
+            return;
+        }
+
+        const ingredientCost = costInput;
+        const ingredientMarkup = (markupInput / 100) * ingredientCost;
+        const totalIngredientCost = ingredientCost + ingredientMarkup;
+
+        totalCost += totalIngredientCost;
+
+        const newRow = document.createElement("tr");
+        newRow.innerHTML = `
+            <td>${productName}</td>
+            <td>R$ ${ingredientCost.toFixed(2)}</td>
+            <td>${markupInput}%</td>
+            <td>R$ ${totalIngredientCost.toFixed(2)}</td>
+        `;
+
+        costTableBody.appendChild(newRow);
+
+        totalCostValue.textContent = totalCost.toFixed(2);
+
+        // Clear input fields
+        document.getElementById("product-name").value = "";
+        document.getElementById("cost").value = "";
+        document.getElementById("markup").value = "";
+    });
+
+    helpButton.addEventListener("click", function () {
+        if (helpSection.style.display === "none") {
+            helpSection.style.display = "block";
+        } else {
+            helpSection.style.display = "none";
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

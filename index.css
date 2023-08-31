@@ -1,0 +1,49 @@
+/* Estilos para o corpo da página */
+body {
+    background-image: url('/images/Calculadora.jpg'); /* Substitua 'sua-imagem.jpg' pelo nome real da sua imagem */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos para os botões no centro da tela */
+.centered-buttons {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -917px;
+}
+
+/* Estilos para os botões animados */
+.animated-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+/* Estilos para o rodapé */
+.footer {
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 29px;
+    width: 61%;
+    margin-left: 84px;
+}
