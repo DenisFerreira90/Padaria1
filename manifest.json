@@ -1,0 +1,16 @@
+{
+    "name": "Calculadora Comercial",
+    "short_name": "Calculadora",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#007bff",
+    "icons": [
+      {
+        "src": "images/Designsemnome.jpg",
+        "sizes": "500x500",
+        "type": "image/jpg"
+      }
+    ]
+  }
+  
