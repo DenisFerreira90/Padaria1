@@ -1,16 +1,39 @@
 /* Estilos para o corpo da página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url('/images/Calculadora.jpg'); /* Substitua 'sua-imagem.jpg' pelo nome real da sua imagem */
-    background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: gainsboro;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-size: cover;
 }
+html, body {
+    height: 100%;
+}
+.background img {
+    margin: 0;
+    height: 100%;
+}
+.background{
+    height: 100%;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    overflow-y: hidden; /* Impede a rolagem vertical */
+}
+@media (max-width: 600px) {
+    .animated-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
 
 /* Estilos para os botões no centro da tela */
 .centered-buttons {
@@ -33,6 +56,14 @@ body {
     font-size: 18px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
+@media (max-width: 600px) {
+    .footer {
+        width: 100%;
+        margin-left: 0;
+        bottom: 0;
+        position: fixed;
+    }
+}
 
 .animated-button:hover {
     background-color: #0056b3;
@@ -46,7 +77,4 @@ body {
     bottom: 29px;
     width: 61%;
     margin-left: 84px;
-}
-a:visited{
-  color: white ; 
 }

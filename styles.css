@@ -5,6 +5,21 @@
         font-size: 24px;
     }
 }
+/* Estilos para telas de tamanho pequeno (até 480px) */
+@media screen and (max-width: 480px) {
+    /* Ajuste estilos para elementos em telas pequenas */
+    /* Exemplos: ajustes de fonte, margens, preenchimento, etc. */
+}
+
+/* Estilos para telas de tamanho médio (481px a 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Ajuste estilos para elementos em telas médias */
+}
+
+/* Estilos para telas de tamanho grande (acima de 768px) */
+@media screen and (min-width: 769px) {
+    /* Ajuste estilos para elementos em telas grandes */
+}
     .product-card {
     border: 1px solid #ccc;
     padding: 10px;
@@ -112,13 +127,14 @@ body {
 }
 
 #markup{
-  margin-left:40px ;
+  margin-left:3px ; 
 }
 #cost{
-    margin-left: 2px;
+  margin-left:3px ; 
 }
 #product-name{
-    margin-left: -2px;
+    margin-left: 3px;
+    width: 50% !important;
 }
 .inicio {
     padding: 4px;
@@ -130,4 +146,68 @@ body {
     border-radius: 5px;
     background-color: #007bff;
     width: 45px;
+}
+/* Animações suaves para os campos do formulário */
+#calculator-form label,
+#calculator-form input,
+#add-button {
+    transition: all 0.3s ease;
+}
+
+#calculator-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#calculator-form input {
+    width: 19%;
+    padding: 9px;
+    margin-bottom: 5px;
+    border: 3px solid #CCE;
+    border-radius: 19px;
+}
+
+#calculator-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#add-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-button:hover {
+    background-color: #0056b3;
+}
+
+/* Animações suaves para a tabela */
+table {
+    border-collapse: collapse;
+    margin: 20px auto; /* Espaçamento da tabela e centralização */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+table th,
+table td {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+}
+
+/* Animação de fade-in para a tabela */
+table.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+table.fade-in.loaded {
+    opacity: 1;
+    transform: translateY(0);
 }

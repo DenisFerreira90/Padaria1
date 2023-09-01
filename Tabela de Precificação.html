@@ -53,9 +53,6 @@
     </table>
 
     <p>Total do Custo: R$ <span id="total-cost-value">0.00</span></p>
-    <footer class="footer">
-        <p>Desenvolvido por Denis Ferreira</p>
-    </footer>
     <script>
 document.addEventListener("DOMContentLoaded", function () {
     const addButton = document.getElementById("add-button");
@@ -109,6 +106,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Adicionar a classe 'loaded' para ativar a animação de fade-in
+    const table = document.querySelector("table");
+    table.classList.add("fade-in", "loaded");
+});
+
+// Adicionar ingredientes
+document.getElementById("add-button").addEventListener("click", function () {
+    // Lógica para adicionar ingredientes à tabela
+
+    // Depois de adicionar um ingrediente, adicione novamente a classe 'loaded' para ativar a animação
+    const table = document.querySelector("table");
+    table.classList.remove("loaded");
+    void table.offsetWidth; // Rerender a tabela sem a classe 'loaded'
+    table.classList.add("loaded");
+});
+
     </script>
 </body>
 </html>
+
