@@ -47,3 +47,6 @@ body {
     width: 61%;
     margin-left: 84px;
 }
+a:visited{
+  color: white ; 
+}
