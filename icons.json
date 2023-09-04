@@ -1,10 +1,4 @@
 {
-  "name": "Calculadora Comercial",
-  "short_name": "Calculadora Comercial",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#007bff",
   "icons": [
     {
       "src": "windows11/SmallTile.scale-100.png",
@@ -454,10 +448,5 @@
       "src": "ios/1024.png",
       "sizes": "1024x1024"
     }
-  ],
-  "description": "Criado para Calculos sobre receitas e porcetagem de vendas de insumos",
-  "lang": "pt",
-  "categories": [
-    "finance"
   ]
 }
