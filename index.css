@@ -14,6 +14,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-size: cover;
+    overflow: hidden;
+
 }
 html, body {
     height: 100%;
@@ -27,11 +29,106 @@ html, body {
     overflow-x: hidden; /* Impede a rolagem horizontal */
     overflow-y: hidden; /* Impede a rolagem vertical */
 }
+/* Estilos para dispositivos móveis com largura máxima de 600 pixels */
 @media (max-width: 600px) {
+    html, body {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .main-container {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    .envolve.texto h1 {
+        font-size: 30px; /* Reduza o tamanho da fonte para dispositivos móveis */
+    }
+
     .animated-button {
-        font-size: 16px;
+        font-size: 16px; /* Reduza o tamanho dos botões para dispositivos móveis */
         padding: 8px 16px;
     }
+
+    /* Outros estilos específicos para dispositivos móveis */
+}
+
+/* Estilos para dispositivos desktop */
+@media (min-width: 601px) {
+    
+    /* Centraliza o texto "Calculadora Comercial" horizontalmente */
+    .envolve.texto, .centered-buttons {
+        text-align: center;
+    }
+
+    /* Centraliza os botões horizontalmente */
+    .centered-buttons {
+        text-align: center;
+    }
+
+    /* Outros estilos específicos para desktops */
+
+    /* Estilos para o rodapé no desktop */
+    .footer {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+/* Estilos para dispositivos desktop */
+@media (min-width: 601px) {
+    /* Estiliza o lado direito da tela */
+    .background-right {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%; /* Define a largura que você deseja para o lado direito */
+        height: 100vh;
+        background-image: url('images/Calculadora.jpg'); /* Define a imagem de fundo */
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1; /* Coloca o elemento no fundo */
+    }
+
+    /* Outros estilos específicos para desktops */
+}
+/* Estilos para dispositivos desktop */
+@media (min-width: 601px) {
+    /* Estiliza o lado esquerdo da tela */
+    .background-left {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%; /* Define a largura que você deseja para o lado esquerdo */
+        height: 100vh;
+        background-image: url('images/Calculadora.jpg'); /* Define a imagem de fundo */
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1; /* Coloca o elemento no fundo */
+    }
+
+    /* Outros estilos específicos para desktops */
+}
+
+/* Exemplo de CSS para aplicar a fonte a todos os parágrafos */
+h1{
+    ;
+    font-family: 'Tilt Neon', cursive;
+}
+.envolve.texto {
+
+    text-align: center;
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.envolve.texto h1 {
+    font-size: 50px; /* Ajuste o tamanho da fonte conforme desejado */
+    font-weight: bold; /* Coloca o texto em negrito */
 }
 
 
@@ -71,10 +168,11 @@ html, body {
 }
 /* Estilos para o rodapé */
 .footer {
-    background-color: white;
     text-align: center;
     position: absolute;
-    bottom: 29px;
-    width: 61%;
-    margin-left: 84px;
+    bottom: 17px;
+    width: 100%;
+}
+button:visited{
+   
 }

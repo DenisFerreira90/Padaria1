@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="manifest.json">
-    <script>
-        if (typeof navigator.serviceWorker !=='undefined'){
-            navigator.serviceWorker.register ('pwabuilder-sw.js')
-        }
-    </script>
-    <title>Página Inicial</title>
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+        <script>
+            if (typeof navigator.serviceWorker !== 'undefined') {
+                navigator.serviceWorker.register('pwabuilder-sw.js')
+            }
+        </script>
+        <title>business calculator</title>
+    </head>
+    
 <body>
-    <div class="background" >
-        <img src="images/Calculadora.jpg" alt="">
-        </div>
-        <div class="centered-buttons">
-        <button class="animated-button" onclick="window.location.href='index2.html'"><a href="Tabela de Precificação.html">Planilha de Precificação</button></a>
-        <button class="animated-button" onclick="window.location.href='index3.html'"><a href="Analise de Receita.html">Análise de Receitas</button></a>
+    <div class="envolve texto">
+        <h1>Calculadora</h1>
+        <h1>Comercial</h1>
     </div>
+    <div class="background">
+        <img src="images/Calculadora.jpg" alt="">
+    </div>
+
+    </div>
+    <div class="centered-buttons">
+        <button class="animated-button" onclick="window.location.href='tabeladePrecificação.html'">Planilha de Precificação</button>
+        <button class="animated-button" onclick="window.location.href='analisedeReceita.html'">Análise de Receitas</button>
+    </div>
+    
 
     <footer class="footer">
         <p>Desenvolvido por Denis Ferreira</p>
