@@ -17,21 +17,18 @@
       "type": "image/png",
       "sizes": "72x72",
       "purpose": "any"
-      
     },
     {
       "src": "imagens/android/android-launchericon-96-96.png",
       "type": "image/png",
       "sizes": "96x96",
       "purpose": "any"
-      
     },
     {
       "src": "imagens/android/android-launchericon-144-144.png",
       "type": "image/png",
       "sizes": "144x144",
       "purpose": "any"
-      
     },
     {
       "src": "imagens/android/android-launchericon-192-192.png",
@@ -44,20 +41,24 @@
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any"
-      
     }
   ],
   "description": "Criado para Calculos sobre receitas e porcetagem de vendas de insumos",
   "lang": "pt",
   "categories": [
-    "finance"
+    "finance",
+    "utilities"
   ],
-  "id": "Calculator",
+  "id": "/index.html",
   "prefer_related_applications": false,
   "edge_side_panel": {
-    "preferred_width": 0
+    "preferred_width": 400
   },
   "display_override": [
+    "standalone",
+    "minimal-ui",
+    "fullscreen",
+    "browser",
     "window-controls-overlay"
   ],
   "screenshots": [
@@ -141,5 +142,8 @@
       "sizes": "750x1334",
       "type": "image/png"
     }
-  ]
+  ],
+  "scope": "\"scope\": \"https://docs.pwabuilder.com\"",
+  "dir": "auto",
+  "orientation": "natural"
 }
