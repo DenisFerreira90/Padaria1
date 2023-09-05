@@ -1,7 +1,7 @@
 {
-  "name": "Calculadora Comercial",
-  "short_name": "Calculadora Comercial",
-  "start_url": "/index.html",
+  "name": "Calculadora Comercial App",
+  "short_name": "Calc_Comercial",
+  "start_url": "https://calculadoracomercial.netlify.app/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#007bff",
@@ -145,5 +145,15 @@
   ],
   "scope": "\"scope\": \"https://docs.pwabuilder.com\"",
   "dir": "auto",
-  "orientation": "natural"
+  "orientation": "natural",
+  
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+},
+
+"launch_handler": {
+    "client_mode": ["navigate-existing, auto"]
+},
+"handle_links": "preferred"
+
 }
