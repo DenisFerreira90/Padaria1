@@ -103,7 +103,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -917px;
+    margin-top: -900px;
 }
 
 /* Estilos para os botões animados */
@@ -111,7 +111,7 @@ h1{
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 31px;
     padding: 10px 20px;
     margin: 10px;
     cursor: pointer;
