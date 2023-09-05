@@ -8,10 +8,11 @@
 </head>
 <body>
 
-  <h2 id="texth2">Análise de Receita</h2>
+  
   <header class="header">
     <a class="inicio" href="index.html">INICIO</a>
     <button id="help-button" class="help-button">Ajuda</button>
+    <h2 id="texth2">Análise de Receita</h2>
   </header>
 
   <table id="tabela1">
@@ -35,23 +36,23 @@
         </select>
       </td>
       <td><input type="number" step="0.01" class="custo"></td>
-      <td><button type="button" onclick="removerLinha(this)">Remover</button></td>
+      <td><button id="corbutton" type="button" onclick="removerLinha(this)">Remover</button></td>
     </tr>
     <!-- Continue adding more ingredient rows -->
   </table>
   
   <button type="button" onclick="adicionarLinha()">Adicionar Ingrediente</button>
+  <div class="formulario">
+    <label for="custoAdicional">Custo Adicional (R$): </label>
+    <input type="number" id="custoAdicional" step="0.01"><br>
 
-  <label for="custoAdicional">Custo Adicional (R$): </label>
-  <input type="number" id="custoAdicional" step="0.01"><br>
+    <label for="valorVenda">Valor de Venda por Unidade (R$): </label>
+    <input type="number" id="valorVenda" step="0.01"><br>
 
-  <label for="valorVenda">Valor de Venda por Unidade (R$): </label>
-  <input type="number" id="valorVenda" step="0.01"><br>
-
-  <label for="rendimento">Rendimento: </label>
-  <input type="number" id="rendimento"><br>
-
-  <button type="button" onclick="calcular()">Calcular</button>
+    <label for="rendimento">Rendimento: </label>
+    <input type="number" id="rendimento"><br>
+  </div>
+    <button type="button" onclick="calcular()">Calcular</button>
 
   <div id="results"></div>
 

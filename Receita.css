@@ -10,74 +10,80 @@
     font-size: 16px;
   }
   
-  /* Apply responsive styles to different screen sizes */
-  @media only screen and (max-width: 768px) {
-    /* Adjust font sizes and spacing for smaller screens */
-    html {
-      font-size: 14px;
-    }
-    
-    /* Center align text */
-    body, h1, h2, p, label, input, select, button {
-      text-align: center;
-    }
-    
-    /* Adjust table layout */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    
-    th, td {
-      padding: 8px;
-    }
-    
-    /* Reduce input and button widths */
-    input[type="text"],
-    input[type="number"],
-    select,
-    button {
-      width: 100%;
-      max-width: 300px;
-    }
-  }
-  
-  /* Add additional responsive breakpoints as needed */
-  
   /* Apply general styles */
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    background-color: white;
-  }
-  
+body {
+  font-family: Arial, sans-serif;
+  line-height: 2.6;
+  width:100vw;
+}
   /* Style the header */
-  
-  h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
+.header{
+  border: red 1px solid;
+  height: 10%;
+  width: 100vw;
+  padding: 3px;
+}
+#texth2{
+  margin-top: 40px;
   }
+  /* Posicionar o botão de ajuda no canto superior esquerdo */
+.inicio {
+  position: absolute;
+  left: 30px;
+  padding: 1px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 19px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Posicionar o link de início no canto superior direito */
+.help-button {
+  position: absolute;
+  
+  right: 35px;
+  padding: 10px;
+  background-color: #232323;
+  color: #fff;
+  text-decoration: none;
+  width: 95px;
+}
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
   
   /* Style the form elements */
-  input[type="text"],
-  input[type="number"],
-  select,
-  button {
-    margin-bottom: 10px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+input[type="text"],
+input[type="number"],
+select,
+button {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   }
   
   /* Style the buttons */
-  button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 25px;
+}
+#corbutton{
+  background: red;
+  padding: 5px;
+}
+.formulario{
+  text-align: center;
+  border: red solid 3px;
+}
+
+
   /* Style the results div */
   #results {
     margin-top: 20px;
@@ -87,30 +93,48 @@
     background-color: #f9f9f9;
   }
 /*  botão de ajuda */
-/* Posicionar o botão de ajuda no canto superior esquerdo */
-.inicio {
-  position: fixed;
-  top: 20px;
-  left: 30px;
-  padding: 5px 9px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+
+
+/* Apply responsive styles to different screen sizes */
+@media only screen and (max-width: 768px) {
+  /* Adjust font sizes and spacing for smaller screens */
+  html {
+    font-size: 14px;
+  }
+  
+  /* Center align text */
+  body, h1, h2, p, label, input, select, button {
+    text-align: center;
+  }
+  
+/* Estilo para tornar a tabela responsiva */
+#tabela1 {
+  width: 100%;
+  overflow-x: auto; /* Habilita rolagem horizontal em telas menores */
 }
 
-/* Posicionar o link de início no canto superior direito */
-.help-button {
-  position: fixed;
-  top: 20px;
-  right: 35px;
-  padding: 10px;
-  background-color: #232323;
-  color: #fff;
-  text-decoration: none;
-  width: 95px;
+/* Estilos para as células da tabela */
+#tabela1 th,
+#tabela1 td {
+  text-align: left;
+  
 }
-#texth2{
-  margin-top: 50px;
+
+/* Defina larguras percentuais para as colunas */
+#tabela1 th {
+  width: 20%; /* Por exemplo, 20% para cada coluna de cabeçalho */
+}
+
+/* Estilo específico para a coluna "Ação" */
+#tabela1 th:last-child,
+#tabela1 td:last-child {
+  width: 10%; /* Ajuste a largura conforme necessário */
+}
+
+/* Ajuste o estilo dos inputs e selects dentro das células */
+#tabela1 input[type="text"],
+#tabela1 input[type="number"],
+#tabela1 select {
+  width: 100%;
+  box-sizing: border-box;
 }
