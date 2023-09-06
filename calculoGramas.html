@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="calculo-gramas.css">
+</head>
+
+<body>
+    <div class="header">
+        <a class="inicio" href="index.html">INÍCIO</a>
+        <button class="help-button" onclick="exibirAjuda()">AJUDA</button>
+        <h1 id="texth1" >Grama Valorizada</h1>
+    </div>
+
+    <div class="formulario">
+        <label for="precoQuilo">Preço por Quilo (R$/kg):</label>
+        <input type="number" id="precoQuilo" step="0.01" class="input-field"><br><br>
+
+        <label for="quantidadeGramas">Quantidade de Gramas:</label>
+        <input type="number" id="quantidadeGramas" class="input-field"><br><br>
+
+        <button onclick="calcularValor()" class="calculate-button">Calcular</button>
+
+        <div id="result" class="results"></div>
+    </div>
+
+    <!-- Elementos de cálculo em segundo plano -->
+    <div class="calculations">
+        <!-- Adicione quantos elementos de cálculo desejar -->
+        <div class="calculation">123 + 456 = 579</div>
+        <div class="calculation">3.14 * 2.71 = 8.5094</div>
+        <!-- Mais cálculos aqui -->
+    </div>
+
+    <script src="grama.js"></script>
+</body>
+
+</html>

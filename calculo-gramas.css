@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    font-family: fantasy;
+    font-size:  65px;
+}
+
+.header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    height: 15vh;
+    font-size: 60px;
+}
+
+#texth1 {
+    margin-top: 65px;
+    position: absolute;
+    margin-left: 35px;
+}
+
+.inicio,
+.help-button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 32px;
+    border-radius: 30px;
+    height: 61px;
+    width: 130px;
+    float: left; /* Alinhar à esquerda */
+}
+
+.help-button {
+    float: right; /* Alinhar à direita */
+}
+
+h1 {
+    margin: 0;
+}
+
+.formulario {
+    text-align: center;
+    margin-top: 50px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centralizar verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+}
+
+.input-field {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+.calculate-button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.results {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.calculations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center; /* Centralizar verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+}
+
+.calculation {
+    position: absolute;
+    animation: spin 10s linear infinite;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Estilos para tela menor, como 360x740 */
+@media screen and (max-width: 360px) {
+    body {
+        font-size: 22px; /* Tamanho de fonte menor */
+    }
+
+    .header {
+        font-size: 20px; /* Tamanho de fonte menor */
+        padding: 20px 0; /* Reduza o preenchimento do cabeçalho */
+    }
+
+    .inicio,
+    .help-button {
+        font-size: 24px; /* Tamanho de fonte menor */
+        height: 40px; /* Altura menor para botões */
+        width: 100px; /* Largura menor para botões */
+    }
+
+    .formulario {
+        margin-top: 20px; /* Reduza a margem superior do formulário */
+    }
+
+    .input-field {
+        width: 180px; /* Reduza a largura do campo de entrada */
+        font-size: 14px; /* Reduza o tamanho da fonte do campo de entrada */
+    }
+
+    .calculate-button {
+        font-size: 14px; /* Reduza o tamanho da fonte do botão de cálculo */
+    }
+}
+
+/* Estilos para dispositivos maiores, como desktops */
+@media screen and (min-width: 1024px) {
+    /* Adicione estilos específicos para desktops aqui */
+    
+    /* Por exemplo, você pode aumentar o tamanho da fonte do cabeçalho */
+    .header {
+        font-size: 60px;
+    }
+    
+    /* Aumentar o tamanho do texto dos botões */
+    .inicio,
+    .help-button {
+        font-size: 32px;
+        height: 61px;
+        width: 130px;
+        margin-right: 10px;
+    }
+    
+    /* Aumentar a largura do campo de entrada */
+    .input-field {
+        width: 300px;
+    }
+}
