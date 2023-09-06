@@ -22,8 +22,7 @@ body {
     margin-left: 35px;
 }
 
-.inicio,
-.help-button {
+.inicio{
     background-color: #2ecc71;
     color: white;
     border: none;
@@ -36,11 +35,19 @@ body {
     width: 130px;
     float: left; /* Alinhar à esquerda */
 }
-
 .help-button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 32px;
+    border-radius: 30px;
+    height: 61px;
+    width: 130px;
     float: right; /* Alinhar à direita */
 }
-
 h1 {
     margin: 0;
 }
