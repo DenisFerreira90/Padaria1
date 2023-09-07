@@ -7,10 +7,10 @@ body {
     background-size: cover;
     overflow: hidden;
     max-width: 412px;
+    font-family: Arial, sans-serif;
 
-    font-family: fantasy;
+    TEXT-ALIGN: center;
 }
-
 .header {
     background-color: #3498db;
     color: white;
@@ -18,41 +18,45 @@ body {
     height: 201px;
     font-size: 22px;
 }
-
-#texth1 {
-
-}
-
 .inicio {
     background-color: #2ecc71;
     color: white;
     border: none;
-    padding: 10px 20px;
     cursor: pointer;
     font-size: 20px;
     border-radius: 30px;
-    height: 22px;
-    width: 47px;
+    height: 25px;
+    width: 82px;
     float: left;
+    margin-top: 3px;
     text-align: center;
+    text-decoration: none;
+    margin-left: 10px;
 }
 .help-button {
     background-color: #2ecc71;
     color: white;
     border: none;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     cursor: pointer;
     font-size: 20px;
     border-radius: 30px;
-    height: 22px;
-    width: 47px;
+    height: 25px;
+    width: 82px;
     float: right;
     text-align: center;
+    margin-top: 3px;
+    text-align: center;
+    margin-right: 10px;
 }
 h1 {
     margin: 0;
 }
-
+.gramaValorizada{
+    margin-top: 22%;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: #000;
+}
 .formulario {
     text-align: center;
     margin-top: 50px;
@@ -78,6 +82,7 @@ h1 {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 30px;
 }
 
 .results {
@@ -121,14 +126,7 @@ h1 {
 
     .header {
         font-size: 20px; /* Tamanho de fonte menor */
-        padding: 20px 0; /* Reduza o preenchimento do cabeçalho */
-    }
-
-    .inicio,
-    .help-button {
-        font-size: 24px; /* Tamanho de fonte menor */
-        height: 40px; /* Altura menor para botões */
-        width: 100px; /* Largura menor para botões */
+        /*padding: 20px 0; /* Reduza o preenchimento do cabeçalho */
     }
 
     .formulario {
