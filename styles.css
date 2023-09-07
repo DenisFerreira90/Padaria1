@@ -33,23 +33,24 @@ body {
 }
 /* Estilos para o cabeçalho */
 .header {
-    background-color: white;
+    background-color: #3498db;
     padding: 20px 0;
     text-align: center;
 }
 
 /* Estilos para o título h1 no cabeçalho */
 .header h1 {
-    margin: 0;
-    font-size: 31px;
-    margin-top: 32px;
-
+    color: white;
+    margin-top: 10%;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: #000;
+    font-size: 33px;
 }
 
 /* Estilos para o botão de ajuda no cabeçalho */
 .header .help-button {
     padding: 5px 10px;
-    background-color:#232323;
+    background-color: #2ecc71;
     color: white;
     border: none;
     border-radius: 5px;
@@ -83,7 +84,6 @@ body {
     top: 80px; /* Ajuste a posição vertical conforme necessário */
     right: 20px;
     padding: 10px;
-    background-color:#232323;
     color: white;
     border: none;
     border-radius: 5px;
@@ -144,7 +144,7 @@ body {
     margin-top: -2px;
     position: absolute;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #2ecc71;
     width: 45px;
 }
 /* Animações suaves para os campos do formulário */
@@ -176,15 +176,16 @@ body {
 
 #add-button {
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #2ecc71;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
+    margin-left: 5px;
 }
 
 #add-button:hover {
-    background-color: #0056b3;
+    background-color: #2ecc71;
 }
 
 /* Animações suaves para a tabela */

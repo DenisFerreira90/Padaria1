@@ -18,20 +18,25 @@ body {
 }
   /* Style the header */
 .header{
-  
+  background-color: #3498db;
   height: 10%;
   width: 100vw;
   padding: 3px;
 }
 #texth2{
-  margin-top: 40px;
+  color: white;
+  margin-top: 13%;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #000;
+  font-size: 40px;
+
   }
   /* Posicionar o botão de ajuda no canto superior esquerdo */
 .inicio {
   position: absolute;
   left: 30px;
   padding: 1px 20px;
-  background-color: #007bff;
+  background-color: #2ecc71;
   color: white;
   border: none;
   border-radius: 19px;
@@ -45,7 +50,7 @@ body {
   
   right: 35px;
   padding: 10px;
-  background-color: #232323;
+  background-color: #2ecc71;
   color: #fff;
   text-decoration: none;
   width: 95px;
@@ -67,7 +72,7 @@ button {
   
   /* Style the buttons */
 button {
-  background-color: #007bff;
+  background-color: #2ecc71;
   color: #fff;
   border: none;
   cursor: pointer;
